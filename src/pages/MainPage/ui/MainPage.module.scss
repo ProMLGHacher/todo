@@ -1,0 +1,15 @@
+.mainPage {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 736px;
+}
+
+.todoListWithFiltersWidgetWrapper {
+    flex: 1;
+}

@@ -1,0 +1,57 @@
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+ 
+.input:focus ~ .suffixIcon {
+  display: none;
+}
+
+.input:focus.withSuffix {
+  padding-right: 16px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  
+
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-700);
+  color: var(--gray-100);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.withPrefix {
+  padding-left: 40px; // Increased padding left if prefix exists
+}
+
+.withSuffix {
+  padding-right: 40px; // Increased padding right if suffix exists
+}
+
+.prefixIcon, .suffixIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 20px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  color: black;
+}
+
+.prefixIcon {
+  left: 10px; // Left offset
+}
+
+.suffixIcon {
+  right: 10px; // Right offset
+}

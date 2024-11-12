@@ -1,0 +1,37 @@
+.todo {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    color: var(--gray-100);
+    cursor: pointer;
+}
+
+.todoContent {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+
+.todoRemove {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--gray-300);
+    font-size: 20px;
+}
+
+.todoTitle {
+    font-size: 18px;
+
+    &.todoTitleCompleted {
+        color: var(--gray-300);
+        text-decoration: line-through;
+    }
+}
